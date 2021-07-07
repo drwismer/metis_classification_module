@@ -23,9 +23,9 @@ with open('pickle_rf_model.pickle', 'rb') as read_file:
 # ----------------- Spotify Connection ----------------- #
 
 # Credentials
-client_id = 'd72a09f875b3492aa6ffcdbe79ca0786'
-client_secret = 'bc01c2662e604e12aa3f36d18d669bc0'
-username = '1235520406'
+client_id = '_______________________________'
+client_secret = '_______________________________'
+username = '_______________________________'
 
 # Scope Options:  https://developer.spotify.com/web-api/using-scopes/
 scope = 'user-library-read playlist-modify-public playlist-read-private'
