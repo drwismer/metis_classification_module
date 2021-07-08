@@ -35,7 +35,7 @@ I pulled audio features data from Spotify using a library called Spotipy. This r
 
 2. I searched for user generated playlists that were specific to individual EDM subgenres. These were playlists with titles like "Deep House Hits" or "Hardstyle Classics" or "Top 200 Dubstep Songs of the 2000's." For the target variable, I assumed that the users correctly placed songs in appropriately titled playlists, but it should be noted that Spotify generated recommendations, while fewer in number, produced better classification accuracy scores.
 
-Once I had all of the track URI's (Uniform Resource Indicator), I could feed these URI's back into the Spotify API to retrieve audio features. I then performed Exploratory Data Analysis and filtered out songs with extreme features that did not appear to be EDM songs at all. I removed duplicates and perfomed some other data cleaning steps that you can read about in the EDA notebook HERE.
+Once I had all of the track URI's (Uniform Resource Indicator), I could feed these URI's back into the Spotify API to retrieve audio features. I then performed Exploratory Data Analysis and filtered out songs with extreme features that did not appear to be EDM songs at all. I removed duplicates and perfomed some other data cleaning steps that you can read about in the [EDA notebook](https://github.com/drwismer/metis_classification_module/blob/main/EDM%20Classification%20-%20EDA%20and%20Cleaning.ipynb).
 
 Ultimately, I ended up with approximately 35,000 individual songs, which were split into training and testing datasets. For each of these 35,000 songs, I had 13 Spotify audio features. Some of these were categorical features requiring dummification, so I ended up with 27 features in total, though not all were used in the model deployed to the web application.
 
@@ -102,6 +102,6 @@ The final model was a **Random Forest** model including only 10 features from th
 
 ### Communication
 
-I built an attractive web application and a slide deck with a cohesive theme. My slide deck can be viewed HERE. I also included a pre-recorded demo in my presentation. An extended video showing the full functionality of Genrify can be viewed on my YouTube CHANNEL. See below for a screenshot of the Genrify landing page with the output from generating Spotify recommendations using the "edm" genre as a recommendation seed.
+I built an attractive web application and a slide deck with a cohesive theme. My slide deck can be viewed here: [part 1](https://github.com/drwismer/metis_classification_module/blob/main/writeups/genrify_slides_static_part_1.pdf), [part 2](https://github.com/drwismer/metis_classification_module/blob/main/writeups/genrify_slides_static_part_2.pdf). I also included a pre-recorded demo in my presentation. An extended video showing the full functionality of Genrify can be viewed on my [YouTube channel](https://www.youtube.com/watch?v=FcUZ94uZUzM&ab_channel=DavidWismer). See below for a screenshot of the Genrify landing page with the output from generating Spotify recommendations using the "edm" genre as a recommendation seed.
 
 <img src='../notebook_images/web_app.png'>
