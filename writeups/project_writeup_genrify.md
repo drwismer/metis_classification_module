@@ -4,7 +4,7 @@
 
 ### Abstract
 
-For the Metis Bootcamp classification project, I was tasked with building and deploying classification model that tackles an appropriate classification problem. I was required to use upwards of 10K observations and 10 features.
+For the Metis Bootcamp classification project, I was tasked with building and deploying a classification model that tackles an appropriate classification problem. I was required to use upwards of 10K observations and 10 features.
 
 For my project, I built a Streamlit web application called Genrify. The app uses a Random Forest classification model to classify songs into their most closely matched Electronic Dance Music (**EDM**) subgenre. Subgenres included Drum'n'Bass, Deep House, Dubstep, Hardstyle, Progressive House, Techno, and Trance. I tested several classification models and ultimately selected Random Forest (using 10 of 27 possible features) for its balance of classification accuracy and relative simplicity versus another top performing model in the XGBoost Classifier.
 
